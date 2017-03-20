@@ -1,5 +1,11 @@
 // statistic
 $(document).ready(function () {
+  $(".scroll").click(function(event) {
+      event.preventDefault();
+      $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+      }, 1000);
+  });
   /*
   var defaults = {
       containerID: 'toTop', // fading element id
@@ -11,7 +17,7 @@ $(document).ready(function () {
   $().UItoTop({
       easingType: 'easeOutQuart'
   });
-  
+
   $.ajax({
     type: 'POST',
     url: 'http://io.emi.ai/record/access',
