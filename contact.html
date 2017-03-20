@@ -17,6 +17,7 @@
     <!--fonts-->
     <link href='css/font.css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <!--//fonts-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dQD5lZ5VaHjTm7iG6XAdOvOEsG6VhQ2y"></script>
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
@@ -80,6 +81,7 @@
                         <p>Address: <span>No 1088, Xueyuan Blvd., Xili, Nanshan District, Shenzhen, Guangdong, China 518055</span></p>
                     </li>
                 </ul>
+                <div id="baidumap"></div>
             </div>
             <!-- <i class="line"></i> -->
             <!---->
@@ -138,7 +140,23 @@
               $().UItoTop({
                   easingType: 'easeOutQuart'
               });
-            });
+              // Baidu Map
+            	var map = new BMap.Map("baidumap")
+            	var point = new BMap.Point(114.002708, 22.602127)
+            	var marker = new BMap.Marker(point)   // Create Marker
+            	map.addOverlay(marker)                // Add Marker
+            	map.centerAndZoom(point, 16)
+            	var opts = {
+            	  width : 260,
+            	  height: 66,
+            	  title : 'FACULTY AND RESEARCH BUILDING 2',
+            	  enableMessage: false,
+            	}
+            	var infoWindow = new BMap.InfoWindow('Southern University of Science and Technology', opts);  // 创建信息窗口对象
+            	marker.addEventListener('click', function() {
+            		map.openInfoWindow(infoWindow, point)
+            	})
+            })
         </script>
         <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
     </div>

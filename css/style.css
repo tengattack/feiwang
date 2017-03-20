@@ -135,6 +135,15 @@ ul.media-list li > a:before {
   float: right;
   text-align: right;
 }
+#baidumap {
+  width: 100%;
+  height: 600px;
+}
+@media(max-width:480px) {
+  #baidumap {
+    height: 300px;
+  }
+}
 
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 .top-nav{
