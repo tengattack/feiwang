@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="SUSTC, SUSTech, FeiWang, FeiWang's Group" />
+
+    <title>Courses - Fei Wang</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <!--fonts-->
+    <link href='css/font.css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--header-->
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!---->
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"></span>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="members.html" data-hover="MEMBERS">MEMBERS</a></li>
+                        <li><a href="projects.html" data-hover="PROJECTS">PROJECTS</a></li>
+                        <li class="active"><a href="courses.html" data-hover="COURSES">COURSES</a></li>
+                        <li><a href="publications.html" data-hover="PUBLICATIONS">PUBLICATIONS</a></li>
+                        <li><a href="media.html" data-hover="MEDIA">MEDIA</a></li>
+                        <li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function() {
+                            $(".top-nav ul").slideToggle(500, function() {});
+                        });
+                    </script>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="container">
+      <div class="content">
+          <div class="content-top">
+              <h2>COURSES</h2>
+              <i class="line"></i>
+          </div>
+          <div class="top-on">
+              <ul class="media-list">
+                <!-- <li>courses list here</li> -->
+                <li>EE202 (Digital Circuit)</li>
+                <li>EE305 (Introduction to VLSI Technology)</li>
+                <li>EE306 (Introduction to MEMS)</li>
+              </ul>
+          </div>
+          <!-- <i class="line"></i> -->
+          <!---->
+      </div>
+    </div>
+    <!---->
+
+    <div class="container">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="col-md-4 amet-sed">
+                  <h4>Research Interests</h4>
+                  <i class="line"></i>
+                  <ul class="nav-bottom">
+                    <li>Semiconductor Processing and Micro-/Nano Fabrication</li>
+                    <li>Micro-Electro-Mechanical System (MEMS), NEMS</li>
+                    <li>IC test and Semiconductor material test</li>
+                    <li>Optic fiber sensors</li>
+                    <li>Energy harvesting</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 amet-sed">
+                    <h4>navigation</h4>
+                    <i class="line"></i>
+                    <ul class="nav-bottom">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="members.html" data-hover="MEMBERS">MEMBERS</a></li>
+                        <li><a href="projects.html" data-hover="PROJECTS">PROJECTS</a></li>
+                        <li><a href="courses.html" data-hover="COURSES">COURSES</a></li>
+                        <li><a href="publications.html" data-hover="PUBLICATIONS">PUBLICATIONS</a></li>
+                        <li><a href="media.html" data-hover="MEDIA">MEDIA</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 amet-sed">
+                    <h4>get in touch</h4>
+                    <i class="line"></i>
+                    <ul class="nav-bottom">
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                    <p>Phone: <span>+86-755-88O185O9</span></p>
+                    <p>Email: <a href="mailto:wangf (at) sustc.edu.cn">wangf (at) sustc.edu.cn</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+              /*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear'
+					 		};
+							*/
+              $().UItoTop({
+                  easingType: 'easeOutQuart'
+              });
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+    </div>
+</body>
+</html>

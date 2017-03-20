@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="SUSTC, SUSTech, FeiWang, FeiWang's Group" />
+
+    <title>Home - Fei Wang</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <!--fonts-->
+    <link href='css/font.css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--header-->
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <!-- <div class="header-top-on">
+                    <ul class="social-in">
+                        <li><span>Share This Page:</span></li>
+                        <li><a href="#"><i></i></a></li>
+                        <li><a href="#"><i class="tin"></i></a></li>
+                        <li><a href="#"><i class="message"></i></a></li>
+                        <li><a href="#"><i class="youtube"></i></a></li>
+                    </ul>
+                </div> -->
+                <div class="clearfix"></div>
+            </div>
+            <!---->
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"></span>
+                    <ul>
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <li><a href="members.html" data-hover="MEMBERS">MEMBERS</a></li>
+                        <li><a href="projects.html" data-hover="PROJECTS">PROJECTS</a></li>
+                        <li><a href="courses.html" data-hover="COURSES">COURSES</a></li>
+                        <li><a href="publications.html" data-hover="PUBLICATIONS">PUBLICATIONS</a></li>
+                        <li><a href="media.html" data-hover="MEDIA">MEDIA</a></li>
+                        <li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function() {
+                            $(".top-nav ul").slideToggle(500, function() {});
+                        });
+                    </script>
+                </div>
+                <!-- <div class="search">
+						<form>
+							<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+							<input type="submit" value="">
+						</form>
+					</div> -->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="container">
+      <div class="banner">
+          <div class="banner-matter">
+              <i class="line"></i>
+              <h1 style="padding-top:0.7em">Photo Gallery</h1>
+              <i class="line"></i>
+          </div>
+          <div class="banner-top">
+            <div class="wmuSlider example1">
+                <div class="wmuSliderWrapper">
+                    <article style="position: absolute; width: 100%; opacity: 0;">
+                        <div class="banner-bottom">
+                            <a target="_blank" href="http://sustc.edu.cn/news_events_1_7/2848">
+                                <img class="img-responsive line-in" src="images/slide/feiwang-awards.jpg" alt="Awards" />
+                            </a>
+                            <div class="dummy-text">
+                                <div class="doe">
+                                    <h6>Awards</h6>
+                                    <p>Prof. Fei Wang won Distinguished Teaching Award.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                    <article style="position: absolute; width: 100%; opacity: 0;">
+                        <div class="banner-bottom">
+                            <a href="javascript:void(0)">
+                                <img class="img-responsive line-in" src="images/slide/group-photo.jpg" alt="Group Photo" />
+                            </a>
+                            <div class="dummy-text">
+                                <div class="doe">
+                                    <h6>Group Photo</h6>
+                                    <!-- <span>By <b>Zhuoteng Peng</b></span> -->
+                                    <p>Our group members.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                    <article style="position: absolute; width: 100%; opacity: 0;">
+                        <div class="banner-bottom">
+                            <a href="javascript:void(0)">
+                                <img class="img-responsive line-in" src="images/slide/teaching_waifu2x.png" alt="Teaching" />
+                            </a>
+                            <div class="dummy-text">
+                                <div class="doe">
+                                    <h6>Teaching</h6>
+                                    <p>Prof. Fei Wang is teaching.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            <script src="js/jquery.wmuSlider.js"></script>
+            <script>
+                $('.example1').wmuSlider({
+                    pagination: false,
+                });
+            </script>
+          </div>
+          <!-- <i class="line"></i> -->
+          <!---->
+      </div>
+    </div>
+    <!---->
+    <div class="container">
+        <div class="content">
+            <div class="content-top">
+                <h2 style="padding-top:0.7em">NEWS</h2>
+                <i class="line"></i>
+            </div>
+            <!--manage-->
+            <div class="top-on" style="padding-top: 2em">
+              <ul class="media-list">
+                  <li><a target="_blank" href="http://www.transducers2017.org/general/committees.html">Sept. 21, 2016, Prof. Fei Wang is selected to the Technical Program Committee of the Transducers 17 conference!</a></li>
+                  <li>Dec. 22, 2016，Dr. Changhui Zhao and Yushen's abstracts are accepted as oral presentation in IEEE NEMS 2017! Congratulations!</li>
+                  <li><a target="_blank" href="http://sustc.edu.cn/news_events_1_7/2848">Prof. Wang won Distinguished Teaching Award.</a></li>
+                  <li><a target="_blank" href="http://www.sustc.edu.cn/ee_01/2383">Three undergraduates published papers in IEEE-NEMS 2016</a></li>
+                  <li><a target="_blank" href="http://www.sustc.edu.cn/ee_01/2246">Prof. Wang was selected to "Guangdong Special Support Project"</a></li>
+                  <li><a target="_blank" href="http://www.sustc.edu.cn/ee_01/2215">Prof. Wang won the Guangdong Natural Science Funds for Distinguished Young Scholar</a></li>
+                  <li><a target="_blank" href="http://www.sustc.edu.cn/news_events_1_2/1799">Two undergraduates published papers in IEEE-NEMS 2015</a></li>
+                  <li><a target="_blank" href="http://www.sustc.edu.cn/ee_01/948">SUSTech student team won the overall champion in "Be Innovative - An electronic engineering and design challenge"</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+    <div class="container">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="col-md-4 amet-sed">
+                  <h4>Research Interests</h4>
+                  <i class="line"></i>
+                  <ul class="nav-bottom">
+                    <li>Semiconductor Processing and Micro-/Nano Fabrication</li>
+                    <li>Micro-Electro-Mechanical System (MEMS), NEMS</li>
+                    <li>IC test and Semiconductor material test</li>
+                    <li>Optic fiber sensors</li>
+                    <li>Energy harvesting</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 amet-sed">
+                    <h4>navigation</h4>
+                    <i class="line"></i>
+                    <ul class="nav-bottom">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="members.html" data-hover="MEMBERS">MEMBERS</a></li>
+                        <li><a href="projects.html" data-hover="PROJECTS">PROJECTS</a></li>
+                        <li><a href="courses.html" data-hover="COURSES">COURSES</a></li>
+                        <li><a href="publications.html" data-hover="PUBLICATIONS">PUBLICATIONS</a></li>
+                        <li><a href="media.html" data-hover="MEDIA">MEDIA</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 amet-sed">
+                    <h4>get in touch</h4>
+                    <i class="line"></i>
+                    <ul class="nav-bottom">
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                    <p>Phone: <span>+86-755-88O185O9</span></p>
+                    <p>Email: <a href="mailto:wangf (at) sustc.edu.cn">wangf (at) sustc.edu.cn</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+              /*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear'
+					 		};
+							*/
+              $().UItoTop({
+                  easingType: 'easeOutQuart'
+              });
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+    </div>
+</body>
+</html>
