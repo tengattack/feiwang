@@ -1,0 +1,47 @@
+<%- include("common/header", { title: 'Contact', activeTab: 'contact' }) %>
+    <!---->
+    <div class="container">
+        <div class="content">
+            <div class="content-top">
+                <h2>CONTACT</h2>
+                <i class="line"></i>
+            </div>
+            <div class="top-on">
+                <ul class="media-list">
+                    <li><p>Contacts: <span>Prof. Fei Wang</span></p></li>
+                    <li><p>Phone: <span>+86-755-88O185O9</span></p></li>
+                    <li><p>Email: <a href="mailto:wangf (at) sustc.edu.cn">wangf (at) sustc.edu.cn</a></p></li>
+                    <li>
+                        <p>Address: <span>No 1088, Xueyuan Blvd., Xili, Nanshan District, Shenzhen, Guangdong, China 518055</span></p>
+                    </li>
+                </ul>
+                <div id="baidumap"></div>
+            </div>
+            <!-- <i class="line"></i> -->
+            <!---->
+        </div>
+    </div>
+    <!---->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dQD5lZ5VaHjTm7iG6XAdOvOEsG6VhQ2y"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          // Baidu Map
+        	var map = new BMap.Map('baidumap')
+        	var point = new BMap.Point(114.002708, 22.602127)
+        	var marker = new BMap.Marker(point)   // Create Marker
+        	map.addOverlay(marker)                // Add Marker
+        	map.centerAndZoom(point, 16)
+        	var opts = {
+        	  width : 260,
+        	  height: 66,
+        	  title : 'FACULTY AND RESEARCH BUILDING 2',
+        	  enableMessage: false,
+        	}
+          // Create info window
+        	var infoWindow = new BMap.InfoWindow('Southern University of Science and Technology', opts)
+        	marker.addEventListener('click', function() {
+        		map.openInfoWindow(infoWindow, point)
+        	})
+        })
+    </script>
+<%- include("common/footer"); %>

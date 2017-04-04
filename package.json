@@ -1,0 +1,27 @@
+{
+  "name": "feiwang",
+  "version": "1.0.0",
+  "description": "feiwang's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tengattack/feiwang.git"
+  },
+  "keywords": [
+    "feiwang",
+    "website"
+  ],
+  "author": "tengattack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tengattack/feiwang/issues"
+  },
+  "homepage": "https://github.com/tengattack/feiwang#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^3.0.0"
+  }
+}

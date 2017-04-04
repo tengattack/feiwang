@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="SUSTC, SUSTech, FeiWang, FeiWang's Group" />
+
+    <title><%= title %> - Fei Wang</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <!--fonts-->
+    <link href='css/font.css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <!-- <div class="header-top-on">
+                    <ul class="social-in">
+                        <li><span>Share This Page:</span></li>
+                        <li><a href="#"><i></i></a></li>
+                        <li><a href="#"><i class="tin"></i></a></li>
+                        <li><a href="#"><i class="message"></i></a></li>
+                        <li><a href="#"><i class="youtube"></i></a></li>
+                    </ul>
+                </div> -->
+                <div class="clearfix"></div>
+            </div>
+            <!---->
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"></span>
+                    <ul>
+                        <% [
+                          { name: 'home', url: 'index.html' },
+                          { name: 'members', url: 'members.html' },
+                          { name: 'projects', url: 'projects.html' },
+                          { name: 'courses', url: 'courses.html' },
+                          { name: 'publications', url: 'publications.html' },
+                          { name: 'media', url: 'media.html' },
+                          { name: 'contact', url: 'contact.html' },
+                        ].forEach(function (page) { %>
+                        <li<%- page.name === activeTab ? ' class="active"' : '' %>><a href="<%= page.url %>" data-hover="<%= page.name.toUpperCase() %>"><%= page.name.toUpperCase() %></a></li>
+                        <% }); %>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function() {
+                            $(".top-nav ul").slideToggle(500, function() {});
+                        });
+                    </script>
+                </div>
+                <!-- <div class="search">
+						<form>
+							<input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+							<input type="submit" value="">
+						</form>
+					</div> -->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!---->

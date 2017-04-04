@@ -1,0 +1,81 @@
+<%- include("common/header", { title: 'Projects', activeTab: 'projects' }) %>
+    <link href="css/labcentre.css" rel="stylesheet" type="text/css" />
+    <!---->
+    <div class="container">
+      <div class="content">
+          <div class="content-top">
+              <h2>LABCENTRE<span id="site-status" class="btn btn-small btn-red">OFFLINE</span></h2>
+              <i class="line"></i>
+          </div>
+          <div class="top-on">
+            <div id="system-architecture">
+              <img alt="diagram of system architecture" title="The diagram of system architecture." src="./images/diagrams/diagram-of-system-architecture.png" />
+            </div>
+            <div id="chart-temperature">
+              <div class="col-x plr15">
+                <div class="board">
+                  <div class="info">
+                    <span class="small-title">SENSOR1</span>
+                    <h2 class="data">
+                      <span class="value">...</span> °C
+                    </h2>
+                    <hr class="board-line" />
+                  </div>
+                  <canvas id="sparkline1" width="378" height="94" class="sparkline" data-chart="spark-line" data-value="[{data:[]}]" data-labels="[]"></canvas>
+                </div>
+              </div>
+              <div class="col-x plr15">
+                <div class="board">
+                  <div class="info">
+                    <span class="small-title">SENSOR2</span>
+                    <h2 class="data">
+                      <span class="value">...</span> °C
+                    </h2>
+                    <hr class="board-line" />
+                  </div>
+                  <canvas id="sparkline2" width="378" height="94" class="sparkline" data-chart="spark-line" data-value="[{data:[]}]" data-labels="[]"></canvas>
+                </div>
+              </div>
+              <div class="col-x plr15 float-right block-quote">
+                This temperature information is coming from an event-driven wireless sensor node, which is working in FeiWang's Lab.
+                It can be powered by air-flow driven nanogenerators.
+                The temperature signal is wireless transmitted to a Raspberry Pi and delivered to the internet successfully.
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div id="table-log">
+              <h4 class="table-row table-title">Logs<span class="no-data">(No incoming data)</span></h4>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+      <div class="content">
+          <div class="content-top">
+              <h2>PROJECTS</h2>
+              <i class="line"></i>
+          </div>
+          <div class="top-on">
+              <ul class="media-list">
+                <li>2016, PI, Guangdong Natural Science Funds for Distinguished Young Scholar, 1 Million RMB. (广东省自然科学基金杰出青年项目)</li>
+                <li>2016, Guangdong Special Support Program for High-level Talents, 0.3 Million RMB. (广东省“特支计划”)</li>
+                <li>2015, co-PI, Shenzhen Fundamental Research Project, overall 3 Million RMB, with a share of 0.9 Million RMB. (Project No.: JCYJ20150827165024088). (深圳市基础研究学科布局项目)</li>
+                <li>2015, co-PI, Shenzhen Fundamental Research Project, overall 3 Million RMB, with a share of 1 Million RMB. (Project No.: JCYJ20150930160634263). (深圳市基础研究学科布局项目)</li>
+                <li>2015, co-PI, Shenzhen Peacock Group Plan, overall 20 Million RMB. (Project No.: KQTD2015071710313656) (深圳市孔雀团队项目)</li>
+                <li>2015, PI, Guangdong Natural Science Foundation: “MEMS based electrostatic energy harvesting device”, 100,000 RMB (Project No.: 2015A030313812) (广东省自然科学基金)</li>
+                <li>2015, PI, National Natural Science Foundation of China (NSFC): “Micro electrostatic energy harvester with broad bandwidth for wireless sensor networks”, 249,000 RMB (Project No.: 51505209) (国家自然科学基金)</li>
+                <li>2014, PI, Shenzhen Fundamental Research Project: “Key technologies of electret materials for wireless sensor networks”, 290,000 RMB (Project No.: JCYJ20140417105742703). (深圳市基础研究项目)</li>
+                <li>2014, co-PI, Shenzhen key laboratory: “Shenzhen Key Laboratory of 3rd Generation Semiconductor Devices”, overall 3 Million RMB, with a share of 0.6 Million RMB. (Project No.: ZDSYS20140509142721434) (深圳市重点实验室，副主任)</li>
+                <li>2014, PI, start-up research grant for new faculty in SUSTC, 5.98 Million RMB. (南方科技大学科研启动经费)</li>
+                <li>2010, Co-Applicant with Dr. Ming Shen as PI, Project funding: "Microwatt Radio for Self-Sustaining Wireless Sensor Networks". Danish Research Council for Technology and Production (FTP), Denmark. (Project No. 10-093783)</li>
+                <li>2010, PI, Project funding: "Energy harvesting device with polymer electret for wireless electronic devices". Danish Research Council for Technology and Production (FTP), Denmark, 3,866,400 DKK. (Project No. 10-080864)</li>
+              </ul>
+          </div>
+          <!-- <i class="line"></i> -->
+          <!---->
+      </div>
+    </div>
+    <!---->
+    <script src="js/socket.io.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/lab.js?v=20161222"></script>
+<%- include("common/footer"); %>
