@@ -1,5 +1,15 @@
 <%- include("common/header", { title: 'Research', activeTab: 'research' }) %>
 <!---->
+<style>
+.content-bottom .image-wrap {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.content-bottom > img,
+.content-bottom .image-wrap > img {
+  max-width: 100%;
+}
+</style>
 <div class="container">
   <div class="content">
       <div class="content-top">
@@ -7,6 +17,38 @@
           <i class="line"></i>
       </div>
       <div class="top-on">
+        <h4 class="section">Overview</h4>
+        <div class="content-bottom">
+          <img src="./images/research/overview.png" alt="Overview" />
+        </div>
+        <h4 class="section">Energy Harvester</h4>
+        <div class="content-bottom">
+          <div class="image-wrap">
+            <img src="./images/research/energy-harvester.jpg" alt="Energy Harvester" style="max-width: 600px" />
+          </div>
+          <p>采用简单的MEMS工艺技术，开发了一种基于变间距式可变电容结构的静电式振动能量收集器，并且可以实现在4寸硅片上进行原片级加工。此器件包含一个梁-质量块谐振结构，可以将周围环境中的振动能量转化成电能。单个器件的体积只有0.187cm3，可实现在低气压下获得高的输出功率密度，同时通过控制质量块与固定极板之间的空气压膜阻尼和机械碰撞，实现了器件在一定气压、以及一定外部驱动下的宽频输出。目前所加工的器件最高可输出约20μW能量，在特定驱动下，可应用于实验室自建的无线温度传感网络中；同时，未来有望通过更加兼容的器件集成加工工艺应用于更复杂的无线传感网络中，或者其他自供能系统中。</p>
+        </div>
+        <h4 class="section">Humidity measurement</h4>
+        <div class="content-bottom">
+          <div class="image-wrap">
+            <img src="./images/research/humidity-measurement.jpg" alt="Humidity measurement" style="max-width: 800px" />
+          </div>
+          <p>Humidity measurement has a wide range of applications in various fields such as health, agriculture, food, warehousing and manufacturing, leading to increasing needs for humidity sensor. In our group, Graphene oxide and its derivatives are synthesized and studied to realize a fast and accurate detection of relative humidity.</p>
+        </div>
+        <h4 class="section">Triboelectric generator</h4>
+        <div class="content-bottom">
+          <div class="image-wrap">
+            <img src="./images/research/triboelectric-generator.png" alt="Triboelectric generator" />
+          </div>
+          <p>We have developed a triboelectric generator base on charged electret film with optimized performance that can scavenge the air-driven mechanical energy for sustainably powering a wireless temperature sensor node. Different electret thin films: PTFE, flap coated CYTOP, Spray coated COC is investigated to explore the best condition. We prove the output can be enhanced by a negative charged electret film by different level for electrets, while with positively charged electrets, the performance is weakened.  Further, we design a reasonable scheme for integrate the whole self-powered wireless temperature sensor network We have also demonstrated the application of the generator by powering wireless temperature sensor from wind flow.</p>
+        </div>
+        <h4 class="section">Gas sensor</h4>
+        <div class="content-bottom">
+          <div class="image-wrap">
+            <img src="./images/research/gas-sensor.jpg" alt="Gas sensor" />
+          </div>
+          <p>Currently, the development of micro-fabrication technique promotes novel gas sensors toward the trends of miniaturization and low-power consumption. For these purposes, we have tried to synthesize some low-dimensional nanomaterials by hydrothermal, electrospinning, and atomic layer deposition methods, etc, combining the MEMS technique to realize the high performance micro-gas sensors.</p>
+        </div>
       </div>
   </div>
 </div>

@@ -20,4 +20,9 @@ gulp.task('html', function () {
     .pipe(gulp.dest('.'))
 })
 
+gulp.task('debug', function () {
+  return gulp.watch('views/**/*.ejs', [ 'html' ])
+})
+
 gulp.task('default', [ 'html' ])
+gulp.task('dev', [ 'debug' ])
